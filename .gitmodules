@@ -1,0 +1,3 @@
+[submodule "views/partials"] 
+  path = views/partials
+  url = https://github.com/AshlinJoelSizzin/Hawk.AI.git
