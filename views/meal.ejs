@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs') %>
+
+    <div class="page">
+        <div class="meal_container">
+            <div class="options">
+                <img src="/images/Camera Image.jpg" alt="camera_image" class="cam_img meal_cam">
+                <div class="inner_elements">
+                    <div class="elements">
+                        <img src="/images/starters.jpg" alt="starters" class="meal_img">
+                        <div class="button_row">
+                            <button class="meal_button starters_button" type="button"
+                                onclick="window.location.href='/starter'">STARTERS</button>
+                        </div>
+                    </div>
+                    <div class="elements">
+                        <img src="/images/maincourse.jpeg" alt="main course" class="meal_img">
+                        <div class="button_row">
+                            <button type="button" onclick="window.location.href='/maincourse'" class="meal_button">MAIN
+                                COURSE </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <button class="go_back" type="button" onclick="window.location.href='/previous'">Previous Page</button>
+    </div>

@@ -2,14 +2,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* position: relative; */
 }
 
 .container {
-  background-color: rgb(48, 25, 55);
+  /* background-color: rgb(48, 25, 55); */
+  background: linear-gradient(300deg, #ff00dd, #9a02ff, #0077f6);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
   height: 100vh;
-  display: flexbox;
+  display: flex;
   flex-direction: column;
 }
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.back_vid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -0.75;
+}
+
+/* @media (max-aspect-ratio: 16/9) {
+  .back_vid {
+    width: auto;
+    height: 100%;
+  }
+} */
 
 .logo-img1 {
   width: 100px;
@@ -19,8 +51,9 @@
 }
 
 .video {
-  opacity: 0.75;
+  opacity: 0.85;
   position: relative;
+  height: 550px;
 }
 
 .sub-container {
@@ -31,13 +64,13 @@
 }
 
 .get_started {
-  height: 48px;
-  width: 155px;
+  height: 65px;
+  width: 200px;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 23px;
   text-decoration: none;
-  padding-top: 11px;
-  padding-left: 12px;
+  padding-top: 20px;
+  padding-left: 19px;
   color: #d3c6c6;
   background-color: rgb(155, 86, 148);
   /* margin-left: 200px; */
@@ -50,9 +83,9 @@
 .get_started:hover {
   background-color: rgb(57, 199, 118);
   cursor: pointer;
-  height: 52px;
-  width: 160px;
-  font-size: 20px;
+  height: 69px;
+  width: 210px;
+  font-size: 24px;
   font-weight: none;
 }
 

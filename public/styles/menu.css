@@ -1,9 +1,24 @@
 .menu_container {
   height: 100vh;
-  background-color: rgb(84, 58, 91);
+  /* background-color: rgb(84, 58, 91); */
+  background: linear-gradient(300deg, #6f00ff, #004156, #d900f6);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .menu_subcontainer {
@@ -12,15 +27,21 @@
   padding-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  gap: 200px;
+  gap: 150px;
 }
 
 .buttons_division {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 85px;
+  gap: 75px;
+}
+
+.buttons_side {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
 }
 
 .manual_button {
@@ -28,13 +49,22 @@
   width: 230px;
   font-size: 25px;
   font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding-top: 28px;
   background-color: #a79e9e;
 }
 
 .manual_button:hover {
+  font-size: 28px;
   background-color: black;
   color: white;
   cursor: pointer;
+}
+
+.manual_button:active {
+  background-color: yellowgreen;
 }
 
 .cam_img {
