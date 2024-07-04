@@ -1,12 +1,20 @@
 .menu_container {
   height: 100vh;
   /* background-color: rgb(84, 58, 91); */
-  background: linear-gradient(300deg, #6f00ff, #004156, #d900f6);
+  background: linear-gradient(
+      240deg,
+      #68018d,
+      #9500eb 20%,
+      #ea00f6 40%,
+      transparent
+    ),
+    url("../images/food_doodle_1.jpg");
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 42px;
 }
 
 @keyframes gradient-animation {
@@ -20,7 +28,6 @@
     background-position: 0% 50%;
   }
 }
-
 .menu_subcontainer {
   display: flex;
   flex-direction: row;
@@ -30,12 +37,21 @@
   gap: 150px;
 }
 
+.buttons_div_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
 .buttons_division {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 75px;
+  gap: 55px;
+  margin-top: 55px;
 }
 
 .buttons_side {
@@ -54,6 +70,7 @@
   color: black;
   padding-top: 28px;
   background-color: #a79e9e;
+  transition: all 0.5s;
 }
 
 .manual_button:hover {
@@ -65,6 +82,10 @@
 
 .manual_button:active {
   background-color: yellowgreen;
+}
+
+.place_button {
+  margin-top: 50px;
 }
 
 .cam_img {

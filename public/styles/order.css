@@ -1,0 +1,83 @@
+.special_order_page {
+  height: 100vh;
+}
+
+.order_sheet {
+  margin-top: 80px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-image: url(../images/order_bg.png);
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 500px;
+  max-height: auto;
+  width: 850px;
+}
+
+.order_heading {
+  text-align: center;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 35px;
+}
+
+.order_grid {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 1fr 0.25fr;
+  gap: 15px;
+  justify-content: center;
+  padding-right: 45px;
+}
+
+.order_bullets {
+  list-style: none;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.order_list {
+  text-align: center;
+}
+
+.vl {
+  border-left: 5px solid rgba(255, 255, 255, 0.5);
+  min-height: 420px;
+  margin-left: 40px;
+}
+
+.total_box {
+  height: 50px;
+  background-color: white;
+  width: 220px;
+  padding-left: 18px;
+  padding-top: 6px;
+  margin-left: 750px;
+  font-weight: bold;
+  transform: translate(0, -75%);
+}
+
+.order_button {
+  margin-left: 380px;
+  height: 75px;
+  width: 160px;
+  padding-bottom: 60px;
+  border-radius: 35px 35px 0 35px;
+}
+
+.order_del_button {
+  font-size: 15px;
+  width: 70px;
+  color: black;
+  background-color: rgb(255, 134, 229);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.order_del_button:hover {
+  background-color: black;
+  color: white;
+}

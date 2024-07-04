@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contact_elements {
+  margin-bottom: 45px;
+}
+
+.contact_page {
+  margin-top: 80px;
+  /* background-color: black; */
+  background-color: #000000;
+  background-image: url("../images/contact_bg.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.contact_main_text {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 45px;
+}
+
+.contact_mid {
+  margin-top: 25px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.contact_sub_text {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 22px;
+}
+
+.con_img {
+  height: 250px;
+  width: 250px;
+}
+
+.con_card_a {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.con_card_c {
+  display: flex;
+  flex-direction: column;
+}
+
+.con_card_d {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.con_link {
+  text-decoration: none;
+  color: black;
+}
+
+.con_link:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.twitter {
+  height: 55px;
+}
+
+.con_elements {
+  display: flex;
+  flex-direction: column;
+}
+
+.con_element_2 {
+  width: 50%;
+  align-self: flex-end;
+}
+
+.contact_name {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(49, 5, 71);
+}
+
+.contact_quote {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+}

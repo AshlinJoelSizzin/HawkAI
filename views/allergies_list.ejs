@@ -1,0 +1,74 @@
+<%- include('partials/header.ejs') %>
+
+    <div class="menu_container allergies_menu_container">
+
+        <div class="allergies_bg">
+            <h3 class="allergies_buttons_heading">CHOOSE THE INGREDIENTS THAT YOU WANT TO AVOID IN YOUR DISHES</h3>
+            <div class="menu_subcontainer allergies_menu_subcontainer">
+
+
+                <div class="ai_side">
+                    <img src="/images/Camera Image.jpg" alt="Camera will be integrated afterwards"
+                        class="cam_img allergis_cam_img">
+                </div>
+                <div class="buttons_div_flex allergies_buttons_div_flex">
+
+
+                    <form class="button_row" action="/add/allergy" method="post">
+                        <% if (locals.clicked && allergy==="MUSTARD" ) { %>
+                            <button class="allergies_clicked" type="submit">Added</button>
+                            <% } else { %>
+                                <input type="hidden" name="allergyItem" value="MUSTARD">
+                                <button class="allergies_names" type="submit">
+                                    MUSTARD
+                                </button>
+                                <% } %>
+
+                    </form>
+                    <form class="button_row" action="/add/allergy" method="post">
+                        <% if (locals.clicked && allergy==="PEPPER" ) { %>
+                            <button class="allergies_clicked" type="submit">Added</button>
+                            <% } else { %>
+                                <input type="hidden" name="allergyItem" value="PEPPER">
+                                <button class="allergies_names" type="submit">
+                                    PEPPER
+                                </button>
+                                <% } %>
+
+                    </form>
+                    <form class="button_row" action="/add/allergy" method="post">
+                        <% if (locals.clicked && allergy==="GARLIC" ) { %>
+                            <button class="allergies_clicked" type="submit">Added</button>
+                            <% } else { %>
+                                <input type="hidden" name="allergyItem" value="GARLIC">
+                                <button class="allergies_names" type="submit">
+                                    GARLIC
+                                </button>
+                                <% } %>
+
+                    </form>
+                    <form class="button_row" action="/add/allergy" method="post">
+                        <% if (locals.clicked && allergy==="ONION" ) { %>
+                            <button class="allergies_clicked" type="submit">Added</button>
+                            <% } else { %>
+                                <input type="hidden" name="allergyItem" value="ONION">
+                                <button class="allergies_names" type="submit">
+                                    ONION
+                                </button>
+                                <% } %>
+
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <a href="/ordersummary" class="order_button manual_button allergies_proceed" type="button">PROCEED</a>
+
+
+        <div class="special_footer">
+            <%- include('partials/footer.ejs') %>
+        </div>

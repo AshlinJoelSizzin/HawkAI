@@ -1,20 +1,48 @@
 .page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: rgb(84, 58, 91);
-  margin-top: 40px;
-  gap: 25px;
+  /* background-color: rgb(84, 58, 91); */
+  background: linear-gradient(
+      240deg,
+      #68018d,
+      #9500eb 20%,
+      #ea00f6 40%,
+      transparent
+    ),
+    url("../images/food_doodle_1.jpg");
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  margin-top: 0px;
+  gap: 15px;
+}
+
+.special_page {
+  height: 100vh;
+  gap: 20px;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .meal_container {
-  background-color: rgb(84, 58, 91);
+  /* background-color: rgb(84, 58, 91); */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
   margin-bottom: 30px;
 }
 
@@ -23,6 +51,8 @@
   flex-direction: row;
   justify-content: center;
   gap: 110px;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .inner_elements {
@@ -34,7 +64,8 @@
 
 .meal_img {
   height: 250px;
-  width: 300px;
+  width: 350px;
+  margin-bottom: 10px;
   /* margin-right: 40px; */
 }
 
@@ -50,16 +81,18 @@
   color: black;
   font-weight: bold;
   font-size: 17px;
-  margin-top: 7px;
-  margin-left: 60px;
-}
-
-.starters_button {
-  width: 150px;
-  margin-left: 70px;
+  margin-top: 0.5px;
+  transition: all 0.5s;
 }
 
 .meal_button:hover {
+  font-size: 19px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.meal_button:visited {
   font-size: 19px;
   background-color: black;
   color: white;
@@ -72,13 +105,15 @@
 
 .go_back {
   align-self: baseline;
-  margin-left: 100px;
-  margin-top: 45px;
+  margin-left: 80px;
+  margin-top: 0px;
+  margin-bottom: 15px;
   height: 50px;
   width: 170px;
   font-size: 18px;
   font-weight: bold;
   background-color: #a79e9e;
+  transition: all 0.5s;
 }
 
 .go_back:hover {
@@ -86,4 +121,43 @@
   color: white;
   font-size: 20px;
   cursor: pointer;
+}
+
+.meal_pad {
+  margin-left: 90px;
+}
+
+.cart_button {
+  width: 145px;
+  height: 55px;
+  font-size: 16.5px;
+  font-weight: bold;
+  align-self: flex-end;
+  margin-top: 0;
+  color: white;
+  background-color: black;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  position: relative;
+}
+
+.special_button {
+  margin-top: 0;
+}
+
+.cart_list_number {
+  border-radius: 50%;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  font-size: 17px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%);
+  padding-top: 2px;
 }

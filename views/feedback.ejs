@@ -1,0 +1,104 @@
+<%- include('partials/header.ejs') %>
+
+    <div class="feedback_page">
+        <div class="feedback_container">
+            <img src="/images/Camera Image.jpg" alt="" class="cam_img feedback_img">
+
+            <div class="emoji_side">
+                <div class="feedback_emoji_con">
+
+                    <div class="wrapper">
+
+                        <p class="text">How would you rate us?</p>
+
+                        <div class="emoji">
+                            <div>😠</div>
+                            <div>😐</div>
+                            <div>🙂</div>
+                            <div>😊</div>
+                            <div>😍</div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="feedback_emoji_con">
+
+                    <div class="wrapper">
+
+                        <p class="text">How would you rate us?</p>
+
+                        <div class="emoji">
+                            <div>😠</div>
+                            <div>😐</div>
+                            <div>🙂</div>
+                            <div>😊</div>
+                            <div>😍</div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="feedback_emoji_con">
+
+                    <div class="wrapper">
+
+                        <p class="text">How would you rate us?</p>
+
+                        <div class="emoji">
+                            <div>😠</div>
+                            <div>😐</div>
+                            <div>🙂</div>
+                            <div>😊</div>
+                            <div>😍</div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+        const feedbackContainers = document.querySelectorAll(".feedback_emoji_con");
+        const textarea = document.querySelector(".textarea--active");
+        const btn = document.querySelector(".btn");
+
+        feedbackContainers.forEach((container) => {
+            const emoji = container.querySelector(".emoji");
+
+            emoji.addEventListener("click", (e) => {
+                if (e.target.className.includes("emoji")) return;
+
+                const textarea = container.querySelector(".textarea");
+                const btn = container.querySelector(".btn");
+
+                textarea.classList.add("textarea--active");
+                btn.classList.add("btn--active");
+            });
+
+            container.addEventListener("mouseleave", () => {
+                const textarea = container.querySelector(".textarea");
+                const btn = container.querySelector(".btn");
+
+                textarea.classList.remove("textarea--active");
+                btn.classList.remove("btn--active");
+            });
+        });
+
+
+
+
+    </script>
+
+
+    <%- include('partials/footer.ejs') %>

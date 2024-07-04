@@ -1,0 +1,93 @@
+.summary_page {
+  height: 100vh;
+  position: relative;
+}
+
+.summary_sub_page {
+  margin-top: 40px;
+  margin-left: 420px;
+  margin-right: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary_heading_main {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.total_box_summary {
+  color: black;
+  background-color: white;
+  display: inline-block;
+  margin-left: 325px;
+  padding-left: 7px;
+  padding-top: 5px;
+  height: 55px;
+  width: 200px;
+  font-weight: bold;
+  transform: translate(0, 45%);
+}
+
+.allergies_button {
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
+  text-decoration: none;
+  height: 60px;
+  width: 125px;
+  font-weight: bold;
+  padding-top: 17px;
+  padding-left: 18px;
+  border-radius: 30px 30px 0 30px;
+  font-size: 19px;
+}
+
+.allergies_button:hover {
+  background-color: rgb(245, 205, 132);
+  color: black;
+  text-decoration: underline;
+  height: 62px;
+  width: 127px;
+  font-size: 20px;
+}
+
+.summary_vl {
+  border-left: 5px solid rgba(255, 255, 255, 0.5);
+  height: 400px;
+}
+
+.allergies_summary {
+  list-style: none;
+}
+
+.summary_allergies_head {
+  font-size: 22px;
+  padding-top: 25px;
+}
+
+.allergy_display {
+  text-align: center;
+}
+
+.allergies_list {
+  font-weight: bold;
+}
+
+.final_button {
+  margin-top: 650px;
+  margin-left: 1380px;
+  border-radius: 30px 30px 0 30px;
+  width: 175px;
+}
+
+.final_button:hover {
+  background-color: aqua;
+  color: black;
+}

@@ -1,0 +1,13 @@
+.end_main {
+  height: 100vh;
+  background-color: black;
+  padding-top: 80px;
+}
+
+.end_sub {
+  padding-top: 280px;
+  margin-left: 125px;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+}

@@ -1,0 +1,120 @@
+.feedback_page {
+  background-color: #824591;
+  background-image: url("../images/feedback_bg.png");
+  height: 100vh;
+  /* width: 100vh; */
+}
+
+.feedback_container {
+  margin-top: 80px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+.feedback_emoji_con {
+  width: 22rem;
+  background-color: #521262;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  height: 180px;
+}
+
+.wrapper {
+  margin: 2rem 0;
+}
+
+.text {
+  margin-bottom: 0.5rem;
+  font-size: 1.25em;
+  color: #fdfdfd;
+  text-align: center;
+}
+
+.emoji {
+  font-size: 1.7em;
+  display: flex;
+  justify-content: center;
+}
+
+.emoji > div:not(:first-child) {
+  margin-left: 1 rem;
+}
+
+.emoji > div {
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.emoji > div:hover {
+  transform: scale(1.4);
+}
+
+.textarea {
+  width: 100%;
+  display: block;
+  background-color: rgb(59, 9, 59);
+  color: #eee;
+  border: none;
+  resize: none;
+  border: none;
+  outline: none;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.textarea--active {
+  padding: 0.5rem;
+  opacity: 1;
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  color: #eee;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  background-color: purple;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  display: none;
+}
+
+.btn--active {
+  display: inline-block;
+}
+
+.feedback_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 80px;
+  align-items: center;
+  height: 100vh;
+  /* margin-left: 30px; */
+  align-items: center;
+  justify-items: center;
+}
+
+.emoji_side {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.emoji_internal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback_text {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  width: 60px;
+  transform: translate(0, -25%);
+  text-align: center;
+}

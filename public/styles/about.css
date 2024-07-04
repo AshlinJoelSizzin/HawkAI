@@ -1,0 +1,92 @@
+.about_pg {
+  align-self: center;
+  background-color: rgb(213, 208, 208);
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about_iv {
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.about_video {
+  height: 400px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.principle_heading {
+  margin-bottom: 25px;
+  color: rgb(48, 25, 55);
+}
+
+.heading_a {
+  font-size: 55px;
+  display: block;
+  text-align: center;
+}
+
+.heading_b {
+  font-size: 24px;
+  display: block;
+  text-align: center;
+}
+
+.para_text {
+  font-size: 20px;
+}
+
+.car_item {
+  align-self: center;
+  word-spacing: 1.5px;
+  margin-bottom: 50px;
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#myCarousel {
+  width: 1350px;
+}
+
+.who {
+  margin-bottom: 30px;
+}
+
+.heading_c {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.vit {
+  height: 250px;
+  padding-left: 80px;
+  float: left;
+}
+
+.con_info {
+  background-color: rgba(3, 92, 15, 0.878);
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.con_p {
+  padding: 5px;
+}

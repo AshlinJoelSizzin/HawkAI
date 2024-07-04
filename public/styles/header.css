@@ -1,3 +1,18 @@
+.logo_sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo_name {
+  color: rgba(255, 255, 255, 0.819);
+  font-size: 35px;
+}
+
+.logo_sec:hover {
+  cursor: pointer;
+}
+
 .header {
   width: 100%;
   position: absolute;
@@ -13,6 +28,7 @@
 .logo {
   width: 90px;
   height: 80px;
+  opacity: 0.9;
 }
 
 .list {
@@ -21,6 +37,7 @@
   display: flex;
   font-size: 20px;
   gap: 25px;
+  margin-top: 15px;
   margin-right: 50px;
 }
 
@@ -32,4 +49,5 @@
 .link:hover {
   color: yellowgreen;
   text-decoration: underline;
+  cursor: pointer;
 }

@@ -1,0 +1,75 @@
+.allergies_names {
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+  padding-bottom: 10px;
+  background-color: #a79e9e;
+  width: 175px;
+  height: 60px;
+  padding-top: 7px;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.allergies_names:hover {
+  background-color: black;
+  color: white;
+}
+
+.allergies_clicked {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  padding-bottom: 10px;
+  background-color: black;
+  width: 175px;
+  height: 60px;
+  padding-top: 7px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.allergies_buttons_div_flex {
+  gap: 30px;
+}
+
+.allergis_cam_img {
+  width: 520px;
+  height: 350px;
+}
+
+.allergies_menu_subcontainer {
+  padding-left: 160px;
+  padding-bottom: 18px;
+}
+
+.allergies_menu_container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+}
+
+.allergies_buttons_heading {
+  font-weight: bold;
+  padding-bottom: 15px;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.allergies_bg {
+  background-image: url(../images/order_bg.png);
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 1200px;
+}
+
+.allergies_proceed {
+  margin-left: 1400px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.special_footer {
+  width: 100%;
+}

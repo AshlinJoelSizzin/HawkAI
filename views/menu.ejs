@@ -5,18 +5,27 @@
             <div class="ai_side">
                 <img src="/images/Camera Image.jpg" alt="Camera will be integrated afterwards" class="cam_img">
             </div>
-            <div class="buttons_division">
-                <div class="buttons_side">
-                    <a href="/veg" class="manual_button">VEG MENU</a>
-                    <a href="/desserts" class="manual_button">DESSERTS</a>
+            <div class="buttons_div_flex">
+                <div class="buttons_division">
+
+                    <div class="buttons_side">
+                        <a href="/veg/menu" class="manual_button">VEG MENU</a>
+                        <a href="/desserts" class="manual_button">DESSERTS</a>
+
+                    </div>
+                    <div class="buttons_side">
+
+                        <a href="/nonveg/menu" class="manual_button">NON-VEG MENU</a>
+                        <a href="/beverages" class="manual_button">BEVERAGES</a>
+                    </div>
 
                 </div>
                 <div class="buttons_side">
-
-                    <a href="/nonveg" class="manual_button">NON-VEG MENU</a>
-                    <a href="/beverages" class="manual_button">BEVERAGES</a>
+                    <a href="/placeorder" class="manual_button place_button">PLACE ORDER</a>
                 </div>
             </div>
 
         </div>
     </div>
+
+    <%- include('partials/footer.ejs') %>

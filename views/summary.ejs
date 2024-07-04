@@ -1,0 +1,57 @@
+<%- include('partials/header.ejs') %>
+
+    <div class="contact_page summary_page">
+
+        <div class="summary_sub_page order_sheet">
+
+            <h3 class="order summary_heading_main">ORDER SUMMARY</h3>
+
+            <div class="order_grid">
+                <div>
+                    <ul class="order_bullets">
+                        <% for (let i=orderedItems.rows.length-1; i>=0 ; i--) { %>
+                            <li class="order_list">
+                                <%= orderedItems.rows[i].food_items %>
+                            </li>
+                            <% } %>
+                    </ul>
+                </div>
+
+                <div class="summary_vl"></div>
+
+                <div>
+                    <ul class="order_bullets">
+                        <% for (let i=price.rows.length-1; i>= 0; i--) { %>
+                            <li>
+                                ⟨₹⟩ <%= price.rows[i].price %>
+                            </li>
+                            <% } %>
+                    </ul>
+                </div>
+
+
+            </div>
+            <% if (locals.allergies.rows.length>0) {%>
+                <div class="allergy_display">
+                    <h4 class="summary_allergies_head">It is noted that you want to avoid the following food items:
+                    </h4>
+                    <ul class="allergies_summary">
+                        <% for (let i=allergies.rows.length-1; i>= 0; i--) { %>
+                            <li class="allergies_list">
+                                <%= allergies.rows[i].name %>
+                            </li>
+                            <% } %>
+                    </ul>
+                </div>
+                <% } %>
+                    <h2 class="total_box_summary">TOTAL: <%= total %>
+                    </h2>
+
+        </div>
+
+        <a href="/end" class=" manual_button final_button" type="button">EXIT</a>
+
+    </div>
+
+
+    <%- include('partials/footer.ejs') %>

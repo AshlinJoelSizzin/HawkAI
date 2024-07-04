@@ -1,0 +1,47 @@
+<%- include('partials/header.ejs') %>
+
+    <div class="page special_order_page">
+        <div class="order_sheet">
+            <h2 class="order_heading">
+                Your Selected Items:</h2>
+            <div class="order_grid">
+                <div>
+                    <ul class="order_bullets">
+                        <% for (let i=orderedItems.rows.length-1; i>=0 ; i--) { %>
+                            <li class="order_list">
+                                <%= orderedItems.rows[i].food_items %>
+                            </li>
+                            <% } %>
+                    </ul>
+                </div>
+
+                <div class="vl"></div>
+
+                <div>
+                    <ul class="order_bullets">
+                        <% for (let i=price.rows.length-1; i>= 0; i--) { %>
+                            <li>
+                                ⟨₹⟩ <%= price.rows[i].price %>
+                            </li>
+                            <% } %>
+                    </ul>
+                </div>
+                <div class="order_del_col">
+                    <ul class="order_bullets">
+                        <% for (let i=orderedItems.rows.length-1; i>=0 ; i--) { %>
+                            <form action="/delete_item" method="post">
+                                <input type="hidden" name="foodItem" value="<%= orderedItems.rows[i].food_items %>">
+                                <button class="order_del_button" type="submit">REMOVE</button>
+                            </form>
+                            <% } %>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <h2 class="total_box">TOTAL: <%= total %>
+
+                <a href="/proceed" class="order_button manual_button" type="button">PROCEED</a>
+    </div>
+
+    <%- include('partials/footer.ejs') %>

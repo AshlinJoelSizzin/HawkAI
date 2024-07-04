@@ -1,0 +1,156 @@
+<%- include('partials/header.ejs') %>
+
+    <div class="page">
+        <button class="cart_button" onclick="window.location.href='/viewcart'">
+            <div>
+                <% if (locals.cart_length){ %>
+                    <h6 class="cart_list_number">
+                        <%= cart_length %>
+                    </h6>
+                    <% } else { %>
+                        <h6 class="cart_list_number">0</h6>
+                        <% } %>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="currentColor"
+                class="bi bi-cart-fill cart_sym" viewBox="0 0 16 16">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>VIEW CART
+        </button>
+        <div class="v_food_container">
+
+            <div class="v_food_options">
+                <img src="/images/Camera Image.jpg" alt="camera_image" class="v_fc">
+                <div class="veg_starters_grid">
+                    <div class="vstarterblock">
+                        <img src="/images/vegbiryani.jpg" alt="baby corn" class="food_img vstarter">
+                        <h4 class="food_text">VEG BIRYANI</h4>
+                        <form class="button_row" action="/add/vmain" method="post">
+                            <% if (locals.clicked && item==="Veg Biryani" ) { %>
+                                <button class="meal_button starters_button toggle-button" type="submit">Added</button>
+                                <% } else { %>
+                                    <input type="hidden" name="foodItem" value="Veg Biryani">
+                                    <button class="meal_button starters_button" type="submit">
+                                        Add to Cart
+                                    </button>
+                                    <% } %>
+
+                        </form>
+                    </div>
+                    <div class="vstarterblock">
+                        <img src="/images/paneer butter masala.jpg" alt="baby corn" class="food_img vstarter">
+                        <h4 class="food_text" id="paneer_butter">PANEER BUTTER MASALA</h4>
+                        <form class="button_row" action="/add/vmain" method="post">
+                            <% if (locals.clicked && item==="Paneer  Butter Masala" ) { %>
+                                <button class="meal_button starters_button toggle-button" type="submit">Added</button>
+                                <% } else { %>
+                                    <input type="hidden" name="foodItem" value="Paneer  Butter Masala">
+                                    <button class="meal_button starters_button" type="submit">
+                                        Add to Cart
+                                    </button>
+                                    <% } %>
+
+                        </form>
+                    </div>
+                    <div class="vstarterblock">
+                        <img src="/images/garlicbread.jpg" alt="baby corn" class="food_img vstarter">
+                        <h4 class="food_text">GARLIC BREAD</h4>
+                        <form class="button_row" action="/add/vmain" method="post">
+                            <% if (locals.clicked && item==="Garlic Bread" ) { %>
+                                <button class="meal_button starters_button toggle-button" type="submit">Added</button>
+                                <% } else { %>
+                                    <input type="hidden" name="foodItem" value="Garlic Bread">
+                                    <button class="meal_button starters_button" type="submit">
+                                        Add to Cart
+                                    </button>
+                                    <% } %>
+
+                        </form>
+                    </div>
+                    <div class="vstarterblock">
+                        <img src="/images/panner kulcha.jpg" alt="baby corn" class="food_img vstarter">
+                        <h4 class="food_text">PANEER KULCHA</h4>
+                        <form class="button_row" action="/add/vmain" method="post">
+                            <% if (locals.clicked && item==="Paneer Kulcha" ) { %>
+                                <button class="meal_button starters_button toggle-button" type="submit">Added</button>
+                                <% } else { %>
+                                    <input type="hidden" name="foodItem" value="Paneer Kulcha">
+                                    <button class="meal_button starters_button" type="submit">
+                                        Add to Cart
+                                    </button>
+                                    <% } %>
+
+                        </form>
+                    </div>
+                    <div class="vstarterblock">
+                        <img src="/images/malai kofta.jpg" alt="baby corn" class="food_img vstarter">
+                        <h4 class="food_text">MALAI KOFTA</h4>
+                        <form class="button_row" action="/add/vmain" method="post">
+                            <% if (locals.clicked && item==="Malai Kofta" ) { %>
+                                <button class="meal_button starters_button toggle-button" type="submit">Added</button>
+                                <% } else { %>
+                                    <input type="hidden" name="foodItem" value="Malai Kofta">
+                                    <button class="meal_button starters_button" type="submit">
+                                        Add to Cart
+                                    </button>
+                                    <% } %>
+
+                        </form>
+                    </div>
+                    <div class="vstarterblock">
+                        <img src="/images/kajucurry.jpg" alt="baby corn" class="food_img vstarter">
+                        <h4 class="food_text">KAJU CURRY</h4>
+                        <form class="button_row" action="/add/vmain" method="post">
+                            <% if (locals.clicked && item==="Kaju Curry" ) { %>
+                                <button class="meal_button starters_button toggle-button" type="submit">Added</button>
+                                <% } else { %>
+                                    <input type="hidden" name="foodItem" value="Kaju Curry">
+                                    <button class="meal_button starters_button" type="submit">
+                                        Add to Cart
+                                    </button>
+                                    <% } %>
+
+                        </form>
+                    </div>
+                    <div class="vstarterblock">
+                        <img src="/images/methi_mutter_daal.jpg" alt="baby corn" class="food_img vstarter">
+                        <h4 class="food_text">METHI MUTTER DAAL</h4>
+                        <form class="button_row" action="/add/vmain" method="post">
+                            <% if (locals.clicked && item==="Methi Mutter Daal" ) { %>
+                                <button class="meal_button starters_button toggle-button" type="submit">Added</button>
+                                <% } else { %>
+                                    <input type="hidden" name="foodItem" value="Methi Mutter Daal">
+                                    <button class="meal_button starters_button" type="submit">
+                                        Add to Cart
+                                    </button>
+                                    <% } %>
+
+                        </form>
+                    </div>
+                    <div class="vstarterblock">
+                        <img src="/images/palak paneer.jpg" alt="baby corn" class="food_img vstarter">
+                        <h4 class="food_text">PALAK PANEER</h4>
+                        <form class="button_row" action="/add/vmain" method="post">
+                            <% if (locals.clicked && item==="Palak Paneer" ) { %>
+                                <button class="meal_button starters_button toggle-button" type="submit">Added</button>
+                                <% } else { %>
+                                    <input type="hidden" name="foodItem" value="Palak Paneer">
+                                    <button class="meal_button starters_button" type="submit">
+                                        Add to Cart
+                                    </button>
+                                    <% } %>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <button class="go_back" type="button" onclick="window.location.href='/previous_veg'">Previous
+            Page</button>
+    </div>
+    </div>
+
+    <%- include('partials/footer.ejs') %>

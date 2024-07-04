@@ -1,0 +1,67 @@
+.veg_starters_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 35px;
+}
+
+.v_food_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.v_food_options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding-top: 30px;
+}
+
+.v_fc {
+  height: 290px;
+  width: 370px;
+  align-self: center;
+}
+
+.vstarterblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(92, 31, 109, 0.75);
+  height: 320px;
+  border-radius: 25px;
+  box-shadow: 0 0 1.5px 1.5px;
+}
+
+.vstarter {
+  height: 210px;
+  width: 273px;
+  padding: 9px;
+  border-radius: 25px 25px 0 0;
+}
+
+.food_text {
+  color: blanchedalmond;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.starters_button {
+  margin-top: 0.5px;
+  border-radius: 0 15px 0 15px;
+}
+
+#chick_butter {
+  font-size: 20px;
+}
+
+#butterscotch {
+  font-size: 20px;
+}
+
+.exception_button {
+  border-radius: 0;
+}

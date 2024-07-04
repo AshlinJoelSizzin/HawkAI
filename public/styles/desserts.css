@@ -1,0 +1,37 @@
+.food_container {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  gap: 20px;
+}
+
+.food_options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  /* gap: 2px; */
+}
+
+.food_inner_elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 15px;
+  gap: 50px;
+}
+
+.food_cam {
+  height: 350px;
+  align-self: center;
+}
+
+.food_img {
+  height: 220px;
+  width: 300px;
+}
+
+.food_text {
+  color: white;
+  font-size: 20px;
+}
